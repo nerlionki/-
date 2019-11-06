@@ -78,3 +78,47 @@ div.cont>a {
     border-radius: 5px;
     color: #19537D;
 }
+/* 左边内容 */
+div.leftcontent{
+    width: 670px;
+    height: 300px;
+    float: left;
+}
+/* 左上内容 */
+div.titletype{
+    padding: 10px 20px;
+    background-color: #f0efe2;
+}
+div.titletype h3{
+    padding: 0px 0px 10px;
+    margin: 7px;
+    border-bottom: 1px solid gray;
+}
+div.titletype>span{
+    color: #395f47;
+    margin:0px 10px ;
+    float: left;
+}
+div.titletype>a{
+    margin: 0px 5px;
+}
+/* 主要内容 */
+div.songspic-content{
+    margin-top: 20px;
+}
+div.songspic{
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f0efe2;
+}
+div.songspic img{
+    float: left;
+    margin-right: 20px;
+}
+div.songspic b{
+    font-size: 18px;
+}
+div.songspic p{
+    line-height: 200%;
+}
+
