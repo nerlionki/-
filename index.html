@@ -40,22 +40,97 @@
             border-radius: 5px;
         }
 
-        input[type="text"] {
+        nav input[type="text"] {
             border: none;
             background-color: transparent;
         }
 
-        div.content {
+        body>div.content {
             width: 1000px;
             margin: 0px auto;
         }
 
-        div.content div.pull-left {
+        div.content>div.pull-left {
             width: 670px;
         }
 
-        div.content div.pull-right {
+        div.content>div.pull-right {
             width: 300px;
+        }
+
+        div.content div.pull-left section {
+            height: auto;
+            background-color: #F0EFE2;
+            overflow: hidden;
+            margin-top: 20px;
+            border: 1px solid #C8C7BC;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        section p.title a {
+            font-size: 18px;
+            color: #19537D;
+            font-weight: bold;
+        }
+
+        section div.imgbox img {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+
+        section p.author {
+            clear: both;
+        }
+
+        section p.author a {
+            font-size: 12px;
+            color: #65645F;
+        }
+
+        section p.main {
+            font-size: 14px;
+            line-height: 200%;
+        }
+
+        div.content>div.imgbox img {
+            width: 18px;
+            height: 18px;
+        }
+
+        div.content>div.imgbox img:nth-child(1) {
+            margin: 0px;
+        }
+
+        div.content>div.imgbox {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        section>div.content>span {
+            box-sizing: border-box;
+            border: 1px solid;
+            height: 18px;
+            line-height: 19px;
+            width: 34px;
+            border: 1px solid #C5C5C5;
+            color: #aeaeae;
+            text-align: center;
+            font-size: 12px;
+            border-radius: 2px;
+        }
+
+        section div.divider {
+            clear: both;
+            height: 1px;
+            border-top: 1px solid #C5C5C5;
+            margin: 10px 0px;
+        }
+
+        div.footer a {
+            color: #999999;
         }
 
         div.son {
@@ -66,8 +141,6 @@
             background-color: #F0EFE2;
             overflow: hidden;
             border: 1px solid #C8C7BC;
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
             border-radius: 5px;
         }
 
@@ -102,8 +175,42 @@
             margin-left: 20px;
             text-align: center;
             border: 1px solid #DAD9D1;
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            color: #19537D;
+        }
+
+        form.page {
+            margin-top: 20px;
+        }
+
+        button.next {
+            width: 430px;
+            text-align: center;
+            line-height: 40px;
+            height: 40px;
+            background-color: #F0EFE2;
+            font-size: 14px;
+            border: 1px solid #C8C7BC;
+            border-radius: 5px;
+            margin-right: 70px;
+        }
+
+        form.page>input {
+            height: 40px;
+            width: 40px;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+
+        button.pre {
+            margin-left: 10px;
+            line-height: 40px;
+            height: 40px;
+            width: 80px;
+            background-color: #F0EFE2;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid #C8C7BC;
             border-radius: 5px;
         }
     </style>
@@ -142,6 +249,319 @@
     </nav>
     <div class="content">
         <div class="pull-left">
+            <section>
+                <div class="header">
+                    <p class="pull-left title"><a href="">采桑子·西楼月下当时见</a></p>
+                    <div class="imgbox pull-right">
+                        <img src="https://song.gushiwen.org/siteimg/beipic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/shangpic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/zhupic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/yipic.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="author"><a href="">宋代</a><span>：</span><a href="">晏几道</a></p>
+                    <p class="main">
+                        西楼月下当时见，泪粉偷匀。歌罢还颦。恨隔炉烟看未真。<br>
+                        别来楼外垂杨缕，几换青春。倦客红尘。长记楼中粉泪人。
+                    </p>
+                    <div class="imgbox pull-left">
+                        <img src="https://song.gushiwen.org/siteimg/shoucang.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/download.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/copy.png" alt="">
+                    </div>
+                    <span class="pull-right">完善</span>
+                </div>
+                <div class="divider" role="separator"></div>
+                <div class="footer">
+                    <a href="">写人</a><span>，</span><a href="">同情</a><span>，</span><a href="">相思</a>
+                </div>
+            </section>
+            <section>
+                <div class="header">
+                    <p class="pull-left title"><a href="">龙潭夜坐</a></p>
+                    <div class="imgbox pull-right">
+                        <img src="https://song.gushiwen.org/siteimg/beipic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/shangpic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/zhupic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/yipic.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="author"><a href="">明代</a><span>：</span><a href="">王守仁</a></p>
+                    <p class="main">
+                        何处花香入夜清？石林茅屋隔溪声。<br>
+                        幽人月出每孤往，栖鸟山空时一鸣。<br>
+                        草露不辞芒屦湿，松风偏与葛衣轻。<br>
+                        临流欲写猗兰意，江北江南无限情。<br>
+                    </p>
+                    <div class="imgbox pull-left">
+                        <img src="https://song.gushiwen.org/siteimg/shoucang.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/download.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/copy.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/speaker.png" alt="">
+                    </div>
+                    <span class="pull-right">完善</span>
+                </div>
+                <div class="divider" role="separator"></div>
+                <div class="footer">
+                    <a href="">夜晚</a><span>，</span><a href="">写景</a><span>，</span><a href="">抒情</a><span>，</span><a
+                        href="">心情</a><span>，</span><a href="">愉悦</a>
+                </div>
+            </section>
+            <section>
+                <div class="header">
+                    <p class="pull-left title"><a href="">雪梅香·景萧索</a></p>
+                    <div class="imgbox pull-right">
+                        <img src="https://song.gushiwen.org/siteimg/beipic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/shangpic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/zhupic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/yipic.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="author"><a href="">宋代</a><span>：</span><a href="">柳永</a></p>
+                    <p class="main">
+                        景萧索，危楼独立面晴空。动悲秋情绪，当时宋玉应同。渔市孤烟袅寒碧，水村残叶舞愁红。楚天阔，浪浸斜阳，千里溶溶。<br>
+                        临风。想佳丽，别后愁颜，镇敛眉峰。可惜当年，顿乖雨迹云踪。雅态妍姿正欢洽，落花流水忽西东。无憀恨、相思意，尽分付征鸿
+                    </p>
+                    <div class="imgbox pull-left">
+                        <img src="https://song.gushiwen.org/siteimg/shoucang.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/download.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/copy.png" alt="">
+                    </div>
+                    <span class="pull-right">完善</span>
+                </div>
+            </section>
+            <section>
+                <div class="header">
+                    <p class="pull-left title"><a href="">门有车马客行</a></p>
+                    <div class="imgbox pull-right">
+                        <img src="https://song.gushiwen.org/siteimg/beipic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/shangpic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/zhupic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/yipic.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="author"><a href="">魏晋</a><span>：</span><a href="">陆机</a></p>
+                    <p class="main">
+                        门有车马客，驾言发故乡。<br>
+                        念君久不归，濡迹涉江湘。<br>
+                        投袂赴门涂，揽衣不及裳。<br>
+                        拊膺携客泣，掩泪叙温凉。<br>
+                        借问邦族间，恻怆论存亡。<br>
+                        亲友多零落，旧齿皆凋丧。<br>
+                        市朝互迁易，城阙或丘荒。<br>
+                        坟垄日月多，松柏郁茫茫。<br>
+                        天道信崇替，人生安得长。<br>
+                        慷慨惟平生，俯仰独悲伤。<br>
+                    </p>
+                    <div class="imgbox pull-left">
+                        <img src="https://song.gushiwen.org/siteimg/shoucang.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/download.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/copy.png" alt="">
+                    </div>
+                    <span class="pull-right">完善</span>
+                </div>
+                <div class="divider" role="separator"></div>
+                <div class="footer">
+                    <a href="">乐府</a><span>，</span><a href="">思亲</a><span>，</span><a href="">感伤</a><span>，</span><a
+                        href="">人生</a>
+                </div>
+            </section>
+            <section>
+                <div class="header">
+                    <p class="pull-left title"><a href="">池上</a></p>
+                    <div class="imgbox pull-right">
+                        <img src="https://song.gushiwen.org/siteimg/beipic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/shangpic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/zhupic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/yipic.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="author"><a href="">清代</a><span>：</span><a href="">张光启</a></p>
+                    <p class="main">
+                        倚杖池边立，西风荷柄斜。<br>
+                        眼明秋水外，又放一枝花。
+                    </p>
+                    <div class="imgbox pull-left">
+                        <img src="https://song.gushiwen.org/siteimg/shoucang.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/download.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/copy.png" alt="">
+                    </div>
+                    <span class="pull-right">完善</span>
+                </div>
+                <div class="divider" role="separator"></div>
+                <div class="footer">
+                    <a href="">写景</a><span>，</span><a href="">咏物</a>
+                </div>
+            </section>
+            <section>
+                <div class="header">
+                    <p class="pull-left title"><a href="">窜夜郎于乌江留别宗十六璟</a></p>
+                    <div class="imgbox pull-right">
+                        <img src="https://song.gushiwen.org/siteimg/beipic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/shangpic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/zhupic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/yipic.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="author"><a href="">唐代</a><span>：</span><a href="">李白</a></p>
+                    <p class="main">
+                        君家全盛日，台鼎何陆离！<br>
+                        斩鳌翼娲皇，炼石补天维。<br>
+                        一回日月顾，三入凤凰池。<br>
+                        失势青门傍，种瓜复几时？<br>
+                        犹会众宾客，三千光路岐。<br>
+                        皇恩雪愤懑，松柏含荣滋。<br>
+                        我非东床人，令姊忝齐眉。<br>
+                        浪迹未出世，空名动京师。<br>
+                        适遭云罗解，翻谪夜郎悲。<br>
+                        拙妻莫邪剑，及此二龙随。<br>
+                        惭君湍波苦，千里远从之。<br>
+                        白帝晓猿断，黄牛过客迟。<br>
+                        遥瞻明月峡，西去益相思。<br>
+                    </p>
+                    <div class="imgbox pull-left">
+                        <img src="https://song.gushiwen.org/siteimg/shoucang.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/download.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/copy.png" alt="">
+                    </div>
+                    <span class="pull-right">完善</span>
+                </div>
+                <div class="divider" role="separator"></div>
+                <div class="footer">
+                    <a href="">离别</a><span>，</span><a href="">抒怀</a><span>，</span><a href="">感慨</a><span>，</span><a
+                        href="">伤感</a>
+                </div>
+            </section>
+            <section>
+                <div class="header">
+                    <p class="pull-left title"><a href="">春晓曲 / 玉楼春 / 木兰花</a></p>
+                    <div class="imgbox pull-right">
+                        <img src="https://song.gushiwen.org/siteimg/beipic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/shangpic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/zhupic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/yipic.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="author"><a href="">唐代</a><span>：</span><a href="">温庭筠</a></p>
+                    <p class="main">
+                        家临长信往来道，乳燕双双拂烟草。<br>
+                        油壁车轻金犊肥，流苏帐晓春鸡早。<br>
+                        笼中娇鸟暖犹睡，帘外落花闲不扫。<br>
+                        衰桃一树近前池，似惜红颜镜中老。<br>
+                    </p>
+                    <div class="imgbox pull-left">
+                        <img src="https://song.gushiwen.org/siteimg/shoucang.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/download.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/copy.png" alt="">
+                    </div>
+                    <span class="pull-right">完善</span>
+                </div>
+                <div class="divider" role="separator"></div>
+                <div class="footer">
+                    <a href="">春天</a><span>，</span><a href="">写景</a><span>，</span><a href="">女子</a><span>，</span><a
+                        href="">生活</a>
+                </div>
+            </section>
+            <section>
+                <div class="header">
+                    <p class="pull-left title"><a href="">临江仙·记得金銮同唱第</a></p>
+                    <div class="imgbox pull-right">
+                        <img src="https://song.gushiwen.org/siteimg/beipic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/shangpic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/zhupic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/yipic.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="author"><a href="">宋代</a><span>：</span><a href="">欧阳修</a></p>
+                    <p class="main">
+                        记得金銮同唱第，春风上国繁华。如今薄宦老天涯。十年岐路，空负曲江花。<br>
+                        闻说阆山通阆苑，楼高不见君家。孤城寒日等闲斜。离愁难尽，红树远连霞。
+                    </p>
+                    <div class="imgbox pull-left">
+                        <img src="https://song.gushiwen.org/siteimg/shoucang.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/download.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/copy.png" alt="">
+                    </div>
+                    <span class="pull-right">完善</span>
+                </div>
+                <div class="divider" role="separator"></div>
+                <div class="footer">
+                    <a href="">友情</a><span>，</span><a href="">送别</a><span>，</span><a href="">感伤</a>
+                </div>
+            </section>
+            <section>
+                <div class="header">
+                    <p class="pull-left title"><a href="">感春</a></p>
+                    <div class="imgbox pull-right">
+                        <img src="https://song.gushiwen.org/siteimg/beipic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/shangpic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/zhupic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/yipic.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="author"><a href="">唐代</a><span>：</span><a href="">李贺</a></p>
+                    <p class="main">
+                        日暖自萧条，花悲北郭骚。<br>
+                        榆穿莱子眼，柳断舞儿腰。<br>
+                        上幕迎神燕，飞丝送百劳。<br>
+                        胡琴今日恨，急语向檀槽。<br>
+                    </p>
+                    <div class="imgbox pull-left">
+                        <img src="https://song.gushiwen.org/siteimg/shoucang.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/download.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/copy.png" alt="">
+                    </div>
+                    <span class="pull-right">完善</span>
+                </div>
+                <div class="divider" role="separator"></div>
+                <div class="footer">
+                    <a href="">春天</a><span>，</span><a href="">写景</a><span>，</span><a href="">抒情</a><span>，</span><a
+                        href="">愁闷</a>
+                </div>
+            </section>
+            <section>
+                <div class="header">
+                    <p class="pull-left title"><a href="">红梅</a></p>
+                    <div class="imgbox pull-right">
+                        <img src="https://song.gushiwen.org/siteimg/beipic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/shangpic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/zhupic.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/yipic.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="author"><a href="">宋代</a><span>：</span><a href="">王十朋</a></p>
+                    <p class="main">
+                        桃李莫相妒，夭姿元不同。<br>
+                        犹余雪霜态，未肯十分红。
+                    </p>
+                    <div class="imgbox pull-left">
+                        <img src="https://song.gushiwen.org/siteimg/shoucang.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/download.png" alt="">
+                        <img src="https://song.gushiwen.org/siteimg/copy.png" alt="">
+                    </div>
+                    <span class="pull-right">完善</span>
+                </div>
+                <div class="divider" role="separator"></div>
+                <div class="footer">
+                    <a href="">咏物</a><span>，</span><a href="">梅花</a><span>，</span><a href="">品格</a>
+                </div>
+            </section>
+            <form class="page">
+                <button class="pull-left next" type="button">下一页</button>
+                <input type="text" value="1">
+                <span>/10页</span>
+                <button class="pull-right pre" disabled="disabled">下一页</button>
+            </form>
         </div>
         <div class="pull-right">
             <div class="son">
@@ -286,42 +706,43 @@
                 </div>
             </div>
             <div class="son">
-                    <div class="title">古籍</div>
-                    <div class="cont">
-                        <a href="">论语</a>
-                        <a href="">史记</a>
-                        <a href="">周易</a>
-                        <a href="">易传</a>
-                        <a href="">孟子</a>
-                        <a href="">左转</a>
-                        <a href="">大学</a>
-                        <a href="">中庸</a>
-                        <a href="">尚书</a>
-                        <a href="">礼记</a>
-                        <a href="">周礼</a>
-                        <a href="">仪礼</a>
-                        <a href="">庄子</a>
-                        <a href="">老子</a>
-                        <a href="">孟子</a>
-                        <a href="">墨子</a>
-                        <a href="">荀子</a>
-                        <a href="">列子</a>
-                        <a href="">管子</a>
-                        <a href="">吴子</a>
-                        <a href="">素书</a>
-                        <a href="">孝经</a>
-                        <a href="">将苑</a>
-                        <a href="">六韬</a>
-                        <a href="">反经</a>
-                        <a href="">冰鉴</a>
-                        <a href="">论衡</a>
-                        <a href="">智囊</a>
-                        <a href="">汉书</a>
-                        <a href="">更多&gt;&gt</a>
-                    </div>
+                <div class="title">古籍</div>
+                <div class="cont">
+                    <a href="">论语</a>
+                    <a href="">史记</a>
+                    <a href="">周易</a>
+                    <a href="">易传</a>
+                    <a href="">孟子</a>
+                    <a href="">左转</a>
+                    <a href="">大学</a>
+                    <a href="">中庸</a>
+                    <a href="">尚书</a>
+                    <a href="">礼记</a>
+                    <a href="">周礼</a>
+                    <a href="">仪礼</a>
+                    <a href="">庄子</a>
+                    <a href="">老子</a>
+                    <a href="">孟子</a>
+                    <a href="">墨子</a>
+                    <a href="">荀子</a>
+                    <a href="">列子</a>
+                    <a href="">管子</a>
+                    <a href="">吴子</a>
+                    <a href="">素书</a>
+                    <a href="">孝经</a>
+                    <a href="">将苑</a>
+                    <a href="">六韬</a>
+                    <a href="">反经</a>
+                    <a href="">冰鉴</a>
+                    <a href="">论衡</a>
+                    <a href="">智囊</a>
+                    <a href="">汉书</a>
+                    <a href="">更多&gt;&gt</a>
                 </div>
+            </div>
         </div>
     </div>
+
 </body>
 
 </html>
