@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>经典名句_古诗文名句_古诗文网</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/jquery.js"></script>
+    <style>
+        html {
+            min-width: 80%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e1e0c7;
+        }
+
+        header {
+            width: 100%;
+            height: 47px;
+            background-color: #5d6146;
+            line-height: 47px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        /* 头部样式 */
+        ul {
+            margin: 0;
+            padding: 0;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        li {
+            list-style: none;
+            color: white;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .nav-item {
+            padding: 0 10px;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header .active {
+            background-color: rgba(165, 152, 152, 0.4);
+            border-bottom: 3px solid white;
+            margin-top: -5px;
+        }
+
+        .logo-font {
+            font-size: 26px;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        .sousuo {
+            position: relative;
+        }
+
+        .sousuo input {
+            width: 250px;
+            height: 33px;
+            border-radius: 4px;
+        }
+
+        .sousuo-fdj {
+            display: inline-block;
+            position: absolute;
+            background-image: url("./img/docSearch.png");
+            width: 20px;
+            height: 20px;
+            background-size: 100% 100%;
+            top: 15px;
+            right: 8px;
+        }
+
+        /* 主体 右侧*/
+        div.content {
+            width: 1000px;
+            margin: 0px auto;
+        }
+
+        div.content div.pull-left {
+            width: 670px;
+        }
+
+        div.content div.pull-right {
+            width: 300px;
+        }
+
+        div.son {
+            height: auto;
+            width: 298px;
+            margin-top: 20px;
+            float: left;
+            background-color: #F0EFE2;
+            overflow: hidden;
+            border: 1px solid #C8C7BC;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        div.son div.title {
+            height: 25px;
+            line-height: 25px;
+            clear: both;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-left: 20px;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding-left: 5px;
+            border-left: 3px solid #A2C241;
+        }
+
+        div.son div.cont {
+            height: auto;
+            clear: both;
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        div.son div.cont>a {
+            font-size: 14px;
+            height: 22px;
+            line-height: 22px;
+            width: 70px;
+            float: left;
+            margin-top: 15px;
+            margin-left: 20px;
+            text-align: center;
+            border: 1px solid #DAD9D1;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        /* 广告样式 */
+        .guanggao {
+            width: 298px;
+            height: 300px;
+        }
+
+        .guanggao div {
+            display: inline-block;
+            width: 49%;
+            text-align: center;
+        }
+
+        .guanggao a {
+            display: block;
+        }
+
+        .guanggao img {
+            width: 100%;
+            height: 100px;
+
+        }
+
+        /* 主体左侧样式 */
+
+        /* 主题左侧头部 */
+        .mainleft {
+            width: 650px;
+            margin-top: 20px;
+        }
+
+        .main-header {
+            height: 90px;
+            border: 1px solid #C8C7BC;
+            background-color: #f0efe2;
+            border-radius: 7px;
+            box-sizing: border-box;
+            padding: 10px 20px;
+        }
+
+        .main-title {
+            height: 38px;
+            border-bottom: 1px solid #dad9d1;
+            ;
+        }
+
+        .head-cont {
+            margin-top: -30px;
+        }
+
+        .main-header .main-title p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .head-cont span {
+            color: #275f38;
+        }
+
+        .head-cont a {
+            margin-right: 10px;
+        }
+        .ye {
+            color: gray;
+            line-height: 30px;
+            font-size: 13px;
+        }
+        /* 主体左侧主体 */
+        .main-content{
+            width: 670px;
+            border: 1px solid #C8C7BC;
+            background-color: #f0efe2;
+            border-radius: 7px;
+            margin-top: 30px;
+            padding: 0 20px;
+        }
+        .main-content li{
+            color: #19537d;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px dashed #dad9d1;
+        }
+        .main-content li:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <ul class="header-nav">
+            <li class="logo-font">
+                古诗文网
+            </li>
+            <li class="nav-item"><a href="">推荐</a></li>
+            <li class="nav-item"><a href="">诗文</a></li>
+            <li class="nav-item active"><a href="./mingju.html">名句</a></li>
+            <li class="nav-item"><a href="">作者</a></li>
+            <li class="nav-item"><a href="">古籍</a></li>
+            <li class="nav-item"><a href="">我的</a></li>
+            <li class="nav-item"><a href="">手机版</a></li>
+            <li class="sousuo pull-right">
+                <input type="text">
+                <span class="sousuo-fdj"></span>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+    </header>
+    <!-- 主体 -->
+    <main>
+        <div class="content">
+            <div class="pull-left mainleft">
+                <div class="main-header">
+                    <div class="main-title">
+                        <p class="pull-left">不限</p>
+                        <span class="ye pull-right">1/100页</p>
+                    </div>
+                    <hr>
+                    <div class="clearfix"></div>
+
+                    <div class="head-cont">
+                        <span>主题：</span>
+                        <a href="" class="active">不限</a>
+                        <a href="">抒情</a>
+                        <a href="">四季</a>
+                        <a href="">山水</a>
+                        <a href="">天气</a>
+                        <a href="">人物</a>
+                        <a href="">人生</a>
+                        <a href="">生活</a>
+                        <a href="">节日</a>
+                        <a href="">动物</a>
+                        <a href="">植物</a>
+                        <a href="">食物</a>
+                        <a href="">古籍</a>
+                    </div>
+                </div>
+                <ul class="main-content">
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                    <li>山有木兮木有枝，心悦君兮君不知。——佚名《越人歌》</li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <div class="son">
+                    <div class="title">主题</div>
+                    <div class="cont">
+                        <a href="">抒情</a>
+                        <a href="">四季</a>
+                        <a href="">山水</a>
+                        <a href="">天气</a>
+                        <a href="">人物</a>
+                        <a href="">人生</a>
+                        <a href="">生活</a>
+                        <a href="">节日</a>
+                        <a href="">动物</a>
+                        <a href="">植物</a>
+                        <a href="">食物</a>
+                        <a href="">古籍</a>
+                    </div>
+                </div>
+
+                <div class="guanggao son">
+                    <div>
+                        <img src="./img/广告1.jpg" alt="">
+                        <a href="">一百元一下手机</a>
+                    </div>
+                    <div>
+                        <img src="./img/广告2.jpg" alt="">
+                        <a href="">网页游戏前十名</a>
+                    </div>
+                    <div>
+                        <img src="./img/广告3.jpg" alt="">
+                        <a href="">今年网游排行榜</a>
+                    </div>
+                    <div>
+                        <img src="./img/广告4.jpg" alt="">
+                        <a href="">游戏排行榜前十</a>
+                    </div>
+                </div>
+
+                <div class="son">
+                    <div class="title">分类</div>
+                    <div class="cont">
+                        <a href="">爱情</a>
+                        <a href="">友情</a>
+                        <a href="">离别</a>
+                        <a href="">思念</a>
+                        <a href="">思乡</a>
+                        <a href="">伤感</a>
+                        <a href="">孤独</a>
+                        <a href="">闺怨</a>
+                        <a href="">悼亡</a>
+                        <a href="">怀古</a>
+                        <a href="">爱国</a>
+                        <a href="">感恩</a>
+                        <a href="">春天</a>
+                        <a href="">夏天</a>
+                        <a href="">秋天</a>
+                        <a href="">冬天</a>
+                        <a href="">庐山</a>
+                        <a href="">泰山</a>
+                        <a href="">江河</a>
+                        <a href="">长江</a>
+                        <a href="">黄河</a>
+                        <a href="">西湖</a>
+                        <a href="">瀑布</a>
+                        <a href="">写风</a>
+                        <a href="">爱情</a>
+                        <a href="">友情</a>
+                        <a href="">离别</a>
+                        <a href="">思念</a>
+                        <a href="">思乡</a>
+                        <a href="">伤感</a>
+                        <a href="">孤独</a>
+                        <a href="">闺怨</a>
+                        <a href="">悼亡</a>
+                        <a href="">怀古</a>
+                        <a href="">爱国</a>
+                        <a href="">感恩</a>
+                        <a href="">春天</a>
+                        <a href="">夏天</a>
+                        <a href="">秋天</a>
+                        <a href="">冬天</a>
+                        <a href="">庐山</a>
+                        <a href="">泰山</a>
+                        <a href="">江河</a>
+                        <a href="">长江</a>
+                        <a href="">黄河</a>
+                        <a href="">西湖</a>
+                        <a href="">瀑布</a>
+                        <a href="">写风</a>
+                        <a href="">爱情</a>
+                        <a href="">友情</a>
+                        <a href="">离别</a>
+                        <a href="">思念</a>
+                        <a href="">思乡</a>
+                        <a href="">伤感</a>
+                        <a href="">孤独</a>
+                        <a href="">闺怨</a>
+                        <a href="">悼亡</a>
+                        <a href="">怀古</a>
+                        <a href="">爱国</a>
+                        <a href="">感恩</a>
+                        <a href="">春天</a>
+                        <a href="">夏天</a>
+                        <a href="">秋天</a>
+                        <a href="">冬天</a>
+                        <a href="">庐山</a>
+                        <a href="">泰山</a>
+                        <a href="">江河</a>
+                        <a href="">长江</a>
+                        <a href="">黄河</a>
+                        <a href="">西湖</a>
+                        <a href="">瀑布</a>
+                        <a href="">写风</a>
+                        <a href="">爱情</a>
+                        <a href="">友情</a>
+                        <a href="">离别</a>
+                        <a href="">思念</a>
+                        <a href="">思乡</a>
+                        <a href="">伤感</a>
+                        <a href="">孤独</a>
+                        <a href="">闺怨</a>
+                        <a href="">悼亡</a>
+                        <a href="">怀古</a>
+                        <a href="">爱国</a>
+                        <a href="">感恩</a>
+                        <a href="">春天</a>
+                        <a href="">夏天</a>
+                        <a href="">秋天</a>
+                        <a href="">冬天</a>
+                        <a href="">庐山</a>
+                        <a href="">泰山</a>
+                        <a href="">江河</a>
+                        <a href="">长江</a>
+                        <a href="">黄河</a>
+                        <a href="">西湖</a>
+                        <a href="">瀑布</a>
+                        <a href="">写风</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- 尾部 -->
+    <footer>
+
+    </footer>
+    <script>
+        $(".guanggao div").mouseenter(function () {
+            $(this).children("img").css("border", "1px solid red");
+            $(this).children("a").css("color", "red");
+        })
+        $(".guanggao div").mouseleave(function () {
+            $(this).children("img").css("border", "none");
+            $(this).children("a").css("color", "#337ab7");
+        })
+
+    </script>
+</body>
+
+</html>
